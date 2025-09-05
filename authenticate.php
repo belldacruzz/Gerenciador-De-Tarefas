@@ -21,6 +21,8 @@ try {
                         session_start();
                         $_SESSION['user_id'] = $user['id'];
                         $_SESSION['email'] = $user['email'];
+                        $_SESSION['message'] = 'Login realizado com sucesso!';
+                        $_SESSION['message_type'] = 'primary';
                         header("Location: index.php");
                         exit();
                     } else {
